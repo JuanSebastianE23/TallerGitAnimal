@@ -1,12 +1,118 @@
+/* Fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f4f4f4, #e9e9e9);
+    color: #333;
     text-align: center;
 }
 
+/* Header */
+header {
+    background: linear-gradient(135deg, #d4a017, #b8860b);
+    color: white;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* Secciones */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+    position: relative;
+}
+
+/* Línea decorativa debajo del h2 */
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #d4a017;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Imagen */
 img {
-    width: 400px;
+    max-width: 100%;
+    width: 450px;
     height: auto;
     display: block;
-    margin: 20px auto;
-    border-radius: 10px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Párrafo */
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: white;
+    margin: 15px auto;
+    padding: 15px 20px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 600px;
+    font-size: 1.05rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    img {
+        width: 95%;
+    }
+    
+    li {
+        width: 95%;
+    }
 }
